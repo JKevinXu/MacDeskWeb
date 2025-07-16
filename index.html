@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Mac</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Hello World! 👋</h1>
+            <p class="subtitle">Welcome to your Mac application built with web technology</p>
+            <div class="info-card">
+                <h2>About This App</h2>
+                <ul>
+                    <li>Built with <strong>Electron</strong></li>
+                    <li>Uses <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong></li>
+                    <li>Runs natively on <strong>macOS</strong></li>
+                    <li>Cross-platform compatible</li>
+                </ul>
+            </div>
+            <button class="action-button" onclick="showGreeting()">Click Me!</button>
+            <div id="greeting" class="greeting hidden"></div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html> 

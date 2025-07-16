@@ -1,0 +1,36 @@
+{
+  "name": "hello-world-mac",
+  "version": "1.0.0",
+  "description": "A Hello World Mac application built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["electron", "mac", "desktop", "hello-world"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.example.helloworldmac",
+    "productName": "Hello World Mac",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        }
+      ]
+    }
+  }
+}
